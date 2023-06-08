@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Playfair:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.row {
+    margin: 0;
+}
+
+.greeting-bg {
+    /* background: linear-gradient(#4CB8C4, #3CD3AD); */
+    /* background: linear-gradient(#1D2B64, #F8CDDA); */
+    background: linear-gradient(#1A2980, #26D0CE);
+}
+
+.info-bg {
+    background: linear-gradient(#26D0CE, #98EECC);
+}
+
+.project-bg {
+    background: linear-gradient(#98EECC, #D0F5BE);
+}
+
+.contact-bg {
+    background: linear-gradient(#D0F5BE, #FBFFDC);
+}
+
+.footer-bg {
+    /* background: linear-gradient(#FBFFDC, #fff); */
+    background:#8aabae;
+}
+
+.box-bg {
+    background: #FBFFDC;
+}
+
+.title {
+    color: #FFDE91;
+    font-family: 'Caveat', cursive;
+    font-family: 'Playfair', serif;
+}
+
+.sub-title {
+    font-family: 'Caveat', cursive;
+    font-family: 'Playfair', serif;
+    text-shadow: 2px 2px 4px rgba(179, 147, 211, 0.1),
+    3px 4px 4px rgba(179, 147, 211, 0.15),
+    4px 6px 4px rgba(179, 147, 211, 0.2),
+    5px 8px 4px rgba(179, 147, 211, 0.25);
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-icon a {
+    text-decoration: none;
+}
+
+.contact-icon-box {
+    width: 150px;
+    height: 150px;
+    padding-top: 40px;
+    margin: 0 50px;
+    text-align: center;
+    border: 5px solid #26D0CE;
+    border-radius: 50%;
+    transition: 0.3s;
+    background-color: #26D0CE;
+}
+
+.contact-icon-box a {
+    height: fit-content;
+}
+
+.contact-icon-box p {
+    display: none;
+}
+
+.contact-icon-box:hover {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.contact-icon-box:hover img {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.contact-icon-box:hover p {
+    display: block;
+}
+
+#footer a:hover {
+    color: #fff !important;
+}
+
+@media (max-width: 991px) {
+    .profile-img {
+        border: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .project-image img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 575px) {
+    .box-bg {
+        background:none;
+        box-shadow: none !important;
+    }
+
+    .sub-title {
+        text-align: center;
+        border: none !important;
+        font-size: 2.5rem !important;
+    }
+
+    .profile-img img {
+        border-color: #FBFFDC !important;
+    }
+
+    .contact-icon-box {
+        width: 100px;
+        height: 100px;
+        padding-top: 25px;
+        margin: 0 25px;
+    }
+
+    .contact-icon-box img {
+        height: 40px;
+    }
+
+    .contact-icon-box:hover img {
+        transform: none;
+        transition: 0.3s;
+    }
+    
+    .contact-icon-box:hover p {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .info-detail {
+        padding: 5px !important;
+    }
+}
